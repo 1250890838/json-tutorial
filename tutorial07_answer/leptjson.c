@@ -362,6 +362,7 @@ static void lept_stringify_string(lept_context* c, const char* s, size_t len) {
             case '\n': PUTS(c, "\\n",  2); break;
             case '\r': PUTS(c, "\\r",  2); break;
             case '\t': PUTS(c, "\\t",  2); break;
+            case '/' : PUTS(c, "\\/",  2); break;
             default:
                 if (ch < 0x20) {
                     char buffer[7];
